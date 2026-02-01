@@ -19,12 +19,12 @@
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   white-space: nowrap;
-  opacity: 0.12;
+  opacity: 0.4;
   color: #f59e0b;
   will-change: transform;
 }
 .dark .code-particle {
-  opacity: 0.1;
+  opacity: 0.4;
   color: #fbbf24;
 }
 .code-particle--tag { color: #0ea5e9; }
@@ -62,6 +62,14 @@
   height: auto;
   max-height: 520px;
   object-fit: cover;
+}
+
+.scroll-smooth.dark #hero-image{
+  display:block;
+}
+
+.scroll-smooth.dark #hero-image-light{
+  display:none;
 }
 
 /* --- Accessibility: Skip link --- */
@@ -218,7 +226,7 @@ header.scrolled {
   transition: transform 0.45s ease-in-out, box-shadow 0.45s ease-in-out, border-color 0.4s ease-in-out;
 }
 .dark .project-card-inner {
-  background: rgba(30, 41, 59, 0.5);
+  background: rgba(30, 41, 59, 0.8);
   border-color: rgba(255, 255, 255, 0.08);
 }
 .project-card:hover .project-card-inner {

@@ -102,9 +102,10 @@
   // --- Typing effect: human-like, consistent speed, cursor blinks only when paused ---
   const roles = [
     'Web Developer',
-    'WordPress Specialist',
+    'WordPress Developer',
     'Landing Page Developer',
     'Frontend Developer',
+    'UI/UX Developer',
   ];
   const TYPING_MS = 95;      // consistent delay per character (typing)
   const DELETING_MS = 55;    // consistent delay per character (deleting)
