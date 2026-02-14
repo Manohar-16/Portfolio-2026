@@ -59,13 +59,97 @@
     container.appendChild(frag);
   })();
 
-  // --- Project data for modal ---
+  // --- Project data for modal (no duplicates; descriptions from company research) ---
   const projects = {
     recall: {
       title: 'Recall Media FZ',
-      desc: 'Corporate website with responsive layout, optimized performance, and clean UI.',
+      desc: "Dubai's premier event management and media solutions company. End-to-end event production, AV rentals, photography & videography, stage design, and printing for corporate and social events.",
       tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://recallmediafz.com/',
+    },
+    whitegold: {
+      title: 'White Gold',
+      desc: 'Trusted gold buyers across South India with 100+ branches in Karnataka, Kerala, Andhra Pradesh and Telangana. Sell gold for cash, release pledged gold from banks, live gold rates, and instant payment.',
+      tech: 'Wordpress, HTML, CSS, Bootstrap, JavaScript, PHP',
+      url: 'https://whitegold.money/',
+    },
+    'square-one-mena': {
+      title: 'Square One',
+      desc: 'Digital transformation company in KSA, UAE, and Qatar. Deep-tech leader with 16+ years delivering AI-driven solutions, strategic partnerships, and enterprise transformation across content, data, process, and people.',
+      tech: 'WordPress, Elementor',
+      url: 'https://www.squareonemea.com/',
+    },
+    kshemavana: {
+      title: 'Kshemavana',
+      desc: 'Leading naturopathy and wellness retreat near Bangalore (SDM Institute). A forest of wellness offering holistic healing through personalised therapies, yoga, and drugless care across 23 acres of reforested land.',
+      tech: 'HTML, Bootstrap, JS, PHP, WordPress Custom',
+      url: 'https://kshemavana.com/',
+    },
+    'bartack-brands': {
+      title: 'Bartack Brands',
+      desc: 'Full-stack brand launch studio for celebrity fashion and beauty. Helps celebrities, influencers and sports personalities launch and scale fashion labels across India and the Middle East—from strategy to distribution.',
+      tech: 'WordPress, Elementor',
+      url: 'https://bartackbrands.com/',
+    },
+    'capstone-life': {
+      title: 'Capstone Life',
+      desc: 'Luxury real estate developer in Bangalore. Villas and conscious living communities with a focus on design, sustainability, and net-zero energy. Tech-led approach to urban living and landmark projects.',
+      tech: 'HTML, Bootstrap, JS, PHP, WordPress Custom',
+      url: 'https://capstonelife.in/',
+    },
+    hosachiguru: {
+      title: 'Hosachiguru',
+      desc: "India's first holistic farm life company. Managed farmland ownership—you own the land, they handle soil, crops, planting and harvest. 1,500+ acres turned into thriving ecosystems across multiple projects.",
+      tech: 'WordPress, Elementor',
+      url: 'https://www.hosachiguru.com/',
+    },
+    latentview: {
+      title: 'LatentView Analytics',
+      desc: 'Data analytics and AI consulting company. Helps businesses harness data for actionable insights and accurate decisions. Trusted by Fortune 500 clients globally for digital transformation and analytics.',
+      tech: 'WordPress, Elementor',
+      url: 'https://www.latentview.com/',
+    },
+    'citadel-network': {
+      title: 'Citadel Network Solutions',
+      desc: 'Commercial real estate services (Citadel Propcon). Transaction advisory, workspace leasing, and property solutions for occupiers and developers across Bangalore, Hyderabad, Mumbai, Delhi, Pune, and USA.',
+      tech: 'WordPress, Elementor',
+      url: 'https://www.citadelnetinc.com/',
+    },
+    bankiq: {
+      title: 'BankIQ',
+      desc: 'AI-powered fraud prevention platform for financial crimes. Real-time, cognitive ML solutions for issuers, acquirers, payment providers, and fintechs—transaction monitoring, STR reporting, and AML.',
+      tech: 'WordPress, WPBakery',
+      url: 'https://bankiq.co/',
+    },
+    'samvedna-care': {
+      title: 'Samvedna Care',
+      desc: 'Mental health and dementia care provider since 2014. Counselling, dementia care, employee wellbeing, home care, and psychological therapies. Technology-enabled platform with 100K+ hours of care delivered.',
+      tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
+      url: 'https://www.samvednacare.com/',
+    },
+    aurasence: {
+      title: 'Aurasence',
+      desc: 'E-commerce website for a fragrance brand with product-focused design and smooth UX.',
+      tech: 'Shopify',
+      url: 'https://aurasence.com/',
+    },
+    'mpower-lithium': {
+      title: 'Mpower Lithium',
+      desc: 'Product-driven website showcasing lithium battery solutions and applications.',
+      tech: 'Shopify',
+      url: 'https://mpowerlithium.com/',
+    },
+    'api-dynamics': {
+      title: 'API Dynamics',
+      desc: "Unified API and AI security Zero Trust platform. Discovery, threat protection, adaptive MFA, and compliance for APIs and AI agents. Secures internal, external, and third-party APIs with behavioral defense.",
+      tech: 'Wix',
+      url: 'https://www.apidynamics.com/',
+    },
+    'relevate-ai': {
+      title: 'Relevate AI',
+      desc: 'AI-powered marketing and sales cloud. Prospector for finding customers, multi-channel campaigns, and AI analytics for LTV, churn, and performance optimization. For modern marketers and sales teams.',
+      tech: 'Webflow',
+      url: 'https://www.relevate.ai/',
     },
     aftr: {
       title: 'AFTR',
@@ -78,18 +162,6 @@
       desc: 'Business website with cross-browser compatibility and SEO-focused structure.',
       tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://chipedge.com/',
-    },
-    kshemavana: {
-      title: 'Kshemavana',
-      desc: 'WordPress website using custom templates and SEO-friendly structure.',
-      tech: 'WordPress, HTML, JavaScript, PHP',
-      url: 'https://kshemavana.com/',
-    },
-    capstone: {
-      title: 'Capstone Life',
-      desc: 'Custom WordPress website with optimized performance and responsive design.',
-      tech: 'WordPress (hard-coded templates), HTML, JavaScript, PHP',
-      url: 'https://capstonelife.in/',
     },
     additional: {
       title: 'Additional Projects',
