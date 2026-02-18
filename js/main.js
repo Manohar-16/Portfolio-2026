@@ -59,95 +59,95 @@
     container.appendChild(frag);
   })();
 
-  // --- Project data for modal (no duplicates; descriptions from company research) ---
+  // --- Project data for modal (descriptions focus on website/development work done) ---
   const projects = {
     recall: {
       title: 'Recall Media FZ',
-      desc: "Dubai's premier event management and media solutions company. End-to-end event production, AV rentals, photography & videography, stage design, and printing for corporate and social events.",
+      desc: 'Corporate website for Dubai-based event management company. Features service showcases, portfolio galleries, client testimonials, and contact forms with responsive design and optimized performance.',
       tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://recallmediafz.com/',
     },
     whitegold: {
       title: 'White Gold',
-      desc: 'Trusted gold buyers across South India with 100+ branches in Karnataka, Kerala, Andhra Pradesh and Telangana. Sell gold for cash, release pledged gold from banks, live gold rates, and instant payment.',
+      desc: 'Multi-location website for gold buyers with branch finder, live gold rate calculator, KYC verification forms, and payment integration. Responsive design supporting 100+ branches across South India.',
       tech: 'Wordpress, HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://whitegold.money/',
     },
     'square-one-mena': {
       title: 'Square One',
-      desc: 'Digital transformation company in KSA, UAE, and Qatar. Deep-tech leader with 16+ years delivering AI-driven solutions, strategic partnerships, and enterprise transformation across content, data, process, and people.',
+      desc: 'Corporate website for digital transformation company operating in KSA, UAE, and Qatar. Features service pages, case studies, resource center, and multi-language support with modern UI and smooth interactions.',
       tech: 'WordPress, Elementor',
       url: 'https://www.squareonemea.com/',
     },
     kshemavana: {
       title: 'Kshemavana',
-      desc: 'Leading naturopathy and wellness retreat near Bangalore (SDM Institute). A forest of wellness offering holistic healing through personalised therapies, yoga, and drugless care across 23 acres of reforested land.',
+      desc: 'Wellness retreat website with booking system, virtual tour integration, treatment pages, and accommodation details. Custom WordPress integration with responsive design for naturopathy center.',
       tech: 'HTML, Bootstrap, JS, PHP, WordPress Custom',
       url: 'https://kshemavana.com/',
     },
     'bartack-brands': {
       title: 'Bartack Brands',
-      desc: 'Full-stack brand launch studio for celebrity fashion and beauty. Helps celebrities, influencers and sports personalities launch and scale fashion labels across India and the Middle East—from strategy to distribution.',
+      desc: 'Brand launch studio website showcasing portfolio of celebrity fashion brands. Features service pages, market expertise sections, and contact forms with modern design and smooth animations.',
       tech: 'WordPress, Elementor',
       url: 'https://bartackbrands.com/',
     },
     'capstone-life': {
       title: 'Capstone Life',
-      desc: 'Luxury real estate developer in Bangalore. Villas and conscious living communities with a focus on design, sustainability, and net-zero energy. Tech-led approach to urban living and landmark projects.',
+      desc: 'Real estate developer website with project showcases, virtual tours, enquiry forms, and sustainability features. Custom WordPress templates with optimized performance and SEO structure.',
       tech: 'HTML, Bootstrap, JS, PHP, WordPress Custom',
       url: 'https://capstonelife.in/',
     },
     hosachiguru: {
       title: 'Hosachiguru',
-      desc: "India's first holistic farm life company. Managed farmland ownership—you own the land, they handle soil, crops, planting and harvest. 1,500+ acres turned into thriving ecosystems across multiple projects.",
+      desc: 'Farmland marketplace website with project listings, property search filters, enquiry system, and blog. Responsive design showcasing managed farmland projects with interactive maps and galleries.',
       tech: 'WordPress, Elementor',
       url: 'https://www.hosachiguru.com/',
     },
     latentview: {
       title: 'LatentView Analytics',
-      desc: 'Data analytics and AI consulting company. Helps businesses harness data for actionable insights and accurate decisions. Trusted by Fortune 500 clients globally for digital transformation and analytics.',
+      desc: 'Enterprise analytics company website with case studies, thought leadership content, event pages, and resource center. Scalable layouts with modern UI patterns and optimized assets.',
       tech: 'WordPress, Elementor',
       url: 'https://www.latentview.com/',
     },
     'citadel-network': {
       title: 'Citadel Network Solutions',
-      desc: 'Commercial real estate services (Citadel Propcon). Transaction advisory, workspace leasing, and property solutions for occupiers and developers across Bangalore, Hyderabad, Mumbai, Delhi, Pune, and USA.',
+      desc: 'Commercial real estate services website with property listings, location-based search, service pages, and contact forms. Multi-city support with clear service presentation and responsive design.',
       tech: 'WordPress, Elementor',
       url: 'https://www.citadelnetinc.com/',
     },
     bankiq: {
       title: 'BankIQ',
-      desc: 'AI-powered fraud prevention platform for financial crimes. Real-time, cognitive ML solutions for issuers, acquirers, payment providers, and fintechs—transaction monitoring, STR reporting, and AML.',
+      desc: 'Fintech platform website showcasing AI fraud prevention solutions. Features product pages, customer case studies, demo request forms, and technical documentation with clear messaging and fast load times.',
       tech: 'WordPress, WPBakery',
       url: 'https://bankiq.co/',
     },
     'samvedna-care': {
       title: 'Samvedna Care',
-      desc: 'Mental health and dementia care provider since 2014. Counselling, dementia care, employee wellbeing, home care, and psychological therapies. Technology-enabled platform with 100K+ hours of care delivered.',
+      desc: 'Healthcare website with self-assessment tools, service booking system, blog, and patient resources. Custom-coded responsive layouts with fast-loading pages and accessible design.',
       tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://www.samvednacare.com/',
     },
     aurasence: {
       title: 'Aurasence',
-      desc: 'E-commerce website for a fragrance brand with product-focused design and smooth UX.',
+      desc: 'E-commerce website for fragrance brand with product catalog, shopping cart, and checkout flow. Product-focused design with smooth UX and mobile-optimized shopping experience.',
       tech: 'Shopify',
       url: 'https://aurasence.com/',
     },
     'mpower-lithium': {
       title: 'Mpower Lithium',
-      desc: 'Product-driven website showcasing lithium battery solutions and applications.',
+      desc: 'E-commerce website showcasing lithium battery products with detailed specifications, application guides, and purchase options. Product-driven design with clear information architecture.',
       tech: 'Shopify',
       url: 'https://mpowerlithium.com/',
     },
     'api-dynamics': {
       title: 'API Dynamics',
-      desc: "Unified API and AI security Zero Trust platform. Discovery, threat protection, adaptive MFA, and compliance for APIs and AI agents. Secures internal, external, and third-party APIs with behavioral defense.",
+      desc: 'Technology platform website for API security solutions. Features product documentation, demo requests, blog, and resource center with clear service sections and responsive layout.',
       tech: 'Wix',
       url: 'https://www.apidynamics.com/',
     },
     'relevate-ai': {
       title: 'Relevate AI',
-      desc: 'AI-powered marketing and sales cloud. Prospector for finding customers, multi-channel campaigns, and AI analytics for LTV, churn, and performance optimization. For modern marketers and sales teams.',
+      desc: 'Marketing and sales platform website with product modules, feature showcases, demo scheduling, and resource library. AI-focused design highlighting products and use cases.',
       tech: 'Webflow',
       url: 'https://www.relevate.ai/',
     },
