@@ -229,16 +229,31 @@
       url: 'https://meetroom.brandstory.ai/',
       category: 'saas',
     },
+    'mobile-placeholder': {
+      title: 'Mobile Apps',
+      desc: 'Mobile app projects coming soon — native and cross-platform builds will be listed here.',
+      tech: 'React Native, Flutter, Expo',
+      url: '',
+      category: 'mobile',
+    },
+    'chrome-placeholder': {
+      title: 'Chrome Extensions',
+      desc: 'Chrome extension projects coming soon — productivity and workflow tools will be listed here.',
+      tech: 'JavaScript, Chrome Extensions API',
+      url: '',
+      category: 'chrome',
+    },
   };
 
   // --- Typing effect: human-like, consistent speed, cursor blinks only when paused ---
   const roles = [
-    'Web Developer',
+    'Full Stack Developer',
+    'Vibe Coder',
+    'SaaS Product Builder',
+    'CMS Developer',
     'WordPress Developer',
     'HubSpot CMS Developer',
-    'Landing Page Developer',
     'Frontend Developer',
-    'UI/UX Developer',
   ];
   const TYPING_MS = 95;      // consistent delay per character (typing)
   const DELETING_MS = 55;    // consistent delay per character (deleting)
