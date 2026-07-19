@@ -109,6 +109,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/styles.css" />
+        <script src="https://unpkg.com/lucide@0.469.0"></script>
     </head>
     <body
         class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans antialiased transition-colors duration-300 text-base md:text-lg"
@@ -483,7 +484,7 @@
                             <p
                                 class="text-slate-600 dark:text-slate-400 text-sm md:text-base"
                             >
-                                WordPress, Wix, Shopify, Webflow
+                                WordPress, HubSpot CMS, Wix, Shopify, Webflow
                             </p>
                         </article>
                         <article class="skill-card">
@@ -533,10 +534,79 @@
                 <div class="container mx-auto px-4">
                     <h2 class="section-title">Projects</h2>
                     <div
+                        class="project-filters"
+                        role="group"
+                        aria-label="Filter projects by category"
+                    >
+                        <button
+                            type="button"
+                            class="project-filter-btn is-active"
+                            data-filter="all"
+                            aria-pressed="true"
+                        >
+                            All
+                        </button>
+                        <button
+                            type="button"
+                            class="project-filter-btn"
+                            data-filter="custom"
+                            aria-pressed="false"
+                        >
+                            Custom Code
+                        </button>
+                        <button
+                            type="button"
+                            class="project-filter-btn"
+                            data-filter="cms"
+                            aria-pressed="false"
+                        >
+                            CMS
+                        </button>
+                        <button
+                            type="button"
+                            class="project-filter-btn"
+                            data-filter="saas"
+                            aria-pressed="false"
+                        >
+                            SaaS Products
+                        </button>
+                    </div>
+                    <div
                         class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
                     >
-                        <!-- Visible: 6 projects -->
-                        <article class="project-card" data-project="whitegold">
+                        <!-- Visible: 6 projects (Myridius latest first) -->
+                        <article
+                            class="project-card"
+                            data-project="myridius"
+                            data-category="cms"
+                        >
+                            <div class="project-card-inner">
+                                <h3
+                                    class="text-xl md:text-2xl font-semibold mb-2"
+                                >
+                                    Myridius
+                                </h3>
+                                <p
+                                    class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
+                                >
+                                    HubSpot CMS website with industry and
+                                    service pages, resource hub, careers, and
+                                    contact flows. Built with HubDB and modular
+                                    HubSpot templates.
+                                </p>
+                                    <p class="text-xs font-mono text-accent">
+                                    HubSpot CMS, HubDB, HTML, CSS, JavaScript
+                                </p>
+                                <a
+                                    href="https://myridius.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                    >View site →</a
+                                >
+                            </div>
+                        </article>
+                        <article class="project-card" data-project="whitegold" data-category="custom">
                             <div class="project-card-inner">
                                 <h3
                                     class="text-xl md:text-2xl font-semibold mb-2"
@@ -564,7 +634,7 @@
                                 >
                             </div>
                         </article>
-                        <article class="project-card" data-project="recall">
+                        <article class="project-card" data-project="recall" data-category="custom">
                             <div class="project-card-inner">
                                 <h3
                                     class="text-xl md:text-2xl font-semibold mb-2"
@@ -592,7 +662,7 @@
                         </article>
                         <article
                             class="project-card"
-                            data-project="square-one-mena"
+                            data-project="square-one-mena" data-category="cms"
                         >
                             <div class="project-card-inner">
                                 <h3
@@ -611,7 +681,7 @@
                                 <p class="text-xs font-mono text-accent">
                                     WordPress, Elementor
                                 </p>
-                                <a
+                                    <a
                                     href="https://www.squareonemea.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -620,26 +690,30 @@
                                 >
                             </div>
                         </article>
-                        <article class="project-card" data-project="kshemavana">
+                        <article
+                            class="project-card"
+                            data-project="synthesis-systems"
+                            data-category="cms"
+                        >
                             <div class="project-card-inner">
                                 <h3
                                     class="text-xl md:text-2xl font-semibold mb-2"
                                 >
-                                    Kshemavana
+                                    Synthesis Systems
                                 </h3>
                                 <p
                                     class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
                                 >
-                                    Leading naturopathy and wellness retreat
-                                    near Bangalore. Holistic healing through
-                                    personalised therapies, yoga, and drugless
-                                    care across 23 acres.
+                                    Corporate website for a subscription
+                                    monetization consultancy — services,
+                                    solutions, partner pages, success stories,
+                                    and contact flows with responsive layout.
                                 </p>
                                 <p class="text-xs font-mono text-accent">
-                                    HTML, Bootstrap, JS, PHP, WordPress Custom
+                                    WordPress, Divi Builder
                                 </p>
                                 <a
-                                    href="https://kshemavana.com/"
+                                    href="https://synthesis-systems.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     class="project-link"
@@ -649,57 +723,28 @@
                         </article>
                         <article
                             class="project-card"
-                            data-project="bartack-brands"
+                            data-project="synthesis-erp"
+                            data-category="custom"
                         >
                             <div class="project-card-inner">
                                 <h3
                                     class="text-xl md:text-2xl font-semibold mb-2"
                                 >
-                                    Bartack Brands
+                                    Synthesis ERP Solutions
                                 </h3>
                                 <p
                                     class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
                                 >
-                                    Brand launch studio website with portfolio
-                                    showcases, service pages, market expertise
-                                    sections, and contact forms. Modern design
-                                    with smooth animations.
+                                    Single-page website for a Synthesis
+                                    sub-brand focused on Workday Financials and
+                                    revenue management — sections, services, and
+                                    contact CTA in a responsive layout.
                                 </p>
                                 <p class="text-xs font-mono text-accent">
-                                    WordPress, Elementor
+                                    HTML, CSS, JavaScript
                                 </p>
                                 <a
-                                    href="https://bartackbrands.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="project-link"
-                                    >View site →</a
-                                >
-                            </div>
-                        </article>
-                        <article
-                            class="project-card"
-                            data-project="capstone-life"
-                        >
-                            <div class="project-card-inner">
-                                <h3
-                                    class="text-xl md:text-2xl font-semibold mb-2"
-                                >
-                                    Capstone Life
-                                </h3>
-                                <p
-                                    class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
-                                >
-                                    Luxury real estate developer in Bangalore.
-                                    Villas and conscious living communities with
-                                    a focus on design, sustainability, and
-                                    net-zero energy.
-                                </p>
-                                <p class="text-xs font-mono text-accent">
-                                    HTML, Bootstrap, JS, PHP, WordPress Custom
-                                </p>
-                                <a
-                                    href="https://capstonelife.in/"
+                                    href="https://synthesis-erpsolutions.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     class="project-link"
@@ -715,7 +760,101 @@
                         >
                             <article
                                 class="project-card project-card--more"
-                                data-project="hosachiguru"
+                                data-project="kshemavana"
+                                data-category="custom"
+                            >
+                                <div class="project-card-inner">
+                                    <h3
+                                        class="text-xl md:text-2xl font-semibold mb-2"
+                                    >
+                                        Kshemavana
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
+                                    >
+                                        Wellness retreat website with booking
+                                        system, virtual tour integration,
+                                        treatment pages, and accommodation
+                                        details. Custom WordPress with
+                                        responsive design.
+                                    </p>
+                                    <p class="text-xs font-mono text-accent">
+                                        HTML, Bootstrap, JS, PHP, WordPress Custom
+                                    </p>
+                                    <a
+                                        href="https://kshemavana.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-link"
+                                        >View site →</a
+                                    >
+                                </div>
+                            </article>
+                            <article
+                                class="project-card project-card--more"
+                                data-project="bartack-brands"
+                                data-category="cms"
+                            >
+                                <div class="project-card-inner">
+                                    <h3
+                                        class="text-xl md:text-2xl font-semibold mb-2"
+                                    >
+                                        Bartack Brands
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
+                                    >
+                                        Brand launch studio website with portfolio
+                                        showcases, service pages, market expertise
+                                        sections, and contact forms. Modern design
+                                        with smooth animations.
+                                    </p>
+                                    <p class="text-xs font-mono text-accent">
+                                        WordPress, Elementor
+                                    </p>
+                                    <a
+                                        href="https://bartackbrands.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-link"
+                                        >View site →</a
+                                    >
+                                </div>
+                            </article>
+                            <article
+                                class="project-card project-card--more"
+                                data-project="capstone-life"
+                                data-category="custom"
+                            >
+                                <div class="project-card-inner">
+                                    <h3
+                                        class="text-xl md:text-2xl font-semibold mb-2"
+                                    >
+                                        Capstone Life
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
+                                    >
+                                        Luxury real estate developer in Bangalore.
+                                        Villas and conscious living communities with
+                                        a focus on design, sustainability, and
+                                        net-zero energy.
+                                    </p>
+                                    <p class="text-xs font-mono text-accent">
+                                        HTML, Bootstrap, JS, PHP, WordPress Custom
+                                    </p>
+                                    <a
+                                        href="https://capstonelife.in/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-link"
+                                        >View site →</a
+                                    >
+                                </div>
+                            </article>
+                            <article
+                                class="project-card project-card--more"
+                                data-project="hosachiguru" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -746,7 +885,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="latentview"
+                                data-project="latentview" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -776,7 +915,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="citadel-network"
+                                data-project="citadel-network" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -807,7 +946,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="bankiq"
+                                data-project="bankiq" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -836,7 +975,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="samvedna-care"
+                                data-project="samvedna-care" data-category="custom"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -867,7 +1006,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="aurasence"
+                                data-project="aurasence" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -898,7 +1037,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="mpower-lithium"
+                                data-project="mpower-lithium" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -928,7 +1067,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="api-dynamics"
+                                data-project="api-dynamics" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -956,7 +1095,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="relevate-ai"
+                                data-project="relevate-ai" data-category="cms"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -987,7 +1126,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="aftr"
+                                data-project="aftr" data-category="custom"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -1016,7 +1155,7 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="chipedge"
+                                data-project="chipedge" data-category="custom"
                             >
                                 <div class="project-card-inner">
                                     <h3
@@ -1044,31 +1183,132 @@
                             </article>
                             <article
                                 class="project-card project-card--more"
-                                data-project="additional"
+                                data-project="adhub"
+                                data-category="saas"
                             >
                                 <div class="project-card-inner">
-                                    <h3 class="text-xl font-semibold mb-2">
-                                        Additional Projects
+                                    <h3
+                                        class="text-xl md:text-2xl font-semibold mb-2"
+                                    >
+                                        AdHub
                                     </h3>
                                     <p
-                                        class="text-slate-600 dark:text-slate-400 text-sm mb-3"
+                                        class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
                                     >
-                                        Various WordPress and custom HTML
-                                        websites developed with a focus on
-                                        responsiveness, SEO optimization,
-                                        performance, and maintainability.
+                                        All-in-one ad management platform —
+                                        connects Meta Ads, Google Ads, GA4, and
+                                        LinkedIn Ads to generate unified
+                                        performance reports and create campaigns
+                                        from a single dashboard.
                                     </p>
                                     <p class="text-xs font-mono text-accent">
-                                        WordPress, HTML, CSS, JavaScript, PHP
+                                        Next.js, React, Supabase, Node.js
                                     </p>
-                                    <span class="project-link-no-url"
-                                        >Portfolio work</span
+                                    <a
+                                        href="https://adhub.brandstory.ai/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-link"
+                                        >View site →</a
+                                    >
+                                </div>
+                            </article>
+                            <article
+                                class="project-card project-card--more"
+                                data-project="abm-room"
+                                data-category="saas"
+                            >
+                                <div class="project-card-inner">
+                                    <h3
+                                        class="text-xl md:text-2xl font-semibold mb-2"
+                                    >
+                                        ABM room
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
+                                    >
+                                        AI-native prospecting and proposal
+                                        platform for B2B sales — pulls prospect
+                                        details for outreach, generates pitch
+                                        proposals, and uses RAG over stored
+                                        files/data to surface relevant context.
+                                    </p>
+                                    <p class="text-xs font-mono text-accent">
+                                        Next.js, React, Node.js, Python, Redis
+                                    </p>
+                                    <a
+                                        href="https://abmroom.brandstory.ai/login"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-link"
+                                        >View site →</a
+                                    >
+                                </div>
+                            </article>
+                            <article
+                                class="project-card project-card--more"
+                                data-project="meetroom"
+                                data-category="saas"
+                            >
+                                <div class="project-card-inner">
+                                    <h3
+                                        class="text-xl md:text-2xl font-semibold mb-2"
+                                    >
+                                        Meetroom
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
+                                    >
+                                        Self-hosted scheduling and booking
+                                        platform with team scheduling, calendar
+                                        sync, and embeddable booking widgets —
+                                        your database stays the source of truth.
+                                    </p>
+                                    <p class="text-xs font-mono text-accent">
+                                        Next.js, React, Supabase, Node.js
+                                    </p>
+                                    <a
+                                        href="https://meetroom.brandstory.ai/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-link"
+                                        >View site →</a
+                                    >
+                                </div>
+                            </article>
+                            <article
+                                class="project-card project-card--more"
+                                data-project="razdan-consulting"
+                                data-category="cms"
+                            >
+                                <div class="project-card-inner">
+                                    <h3
+                                        class="text-xl md:text-2xl font-semibold mb-2"
+                                    >
+                                        Razdan Consulting
+                                    </h3>
+                                    <p
+                                        class="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-3"
+                                    >
+                                        Corporate website for a financial
+                                        advisory firm with service pages,
+                                        success stories, and contact flows.
+                                    </p>
+                                    <p class="text-xs font-mono text-accent">
+                                        WordPress, Elementor
+                                    </p>
+                                    <a
+                                        href="https://razdanconsulting.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-link"
+                                        >View site →</a
                                     >
                                 </div>
                             </article>
                         </div>
                     </div>
-                    <div class="flex justify-center mt-10">
+                    <div id="projects-toggle-wrap" class="flex justify-center mt-10">
                         <button
                             id="projects-toggle-btn"
                             type="button"
@@ -1098,27 +1338,36 @@
                             >
                                 Reach out via email or phone, or use the form.
                             </p>
-                            <ul class="space-y-3 text-base md:text-lg">
+                            <ul class="space-y-4 text-base md:text-lg">
                                 <li>
                                     <a
                                         href="mailto:manohar.rao.bs16@gmail.com"
-                                        class="flex items-center gap-3 text-slate-700 dark:text-slate-300 hover:text-accent transition-colors duration-300"
-                                        ><span class="text-2xl">✉️</span>
-                                        manohar.rao.bs16@gmail.com</a
+                                        class="contact-item flex items-center gap-3 text-slate-700 dark:text-slate-300 hover:text-accent transition-colors duration-300"
                                     >
+                                        <span class="contact-icon" aria-hidden="true">
+                                            <i data-lucide="mail"></i>
+                                        </span>
+                                        manohar.rao.bs16@gmail.com
+                                    </a>
                                 </li>
                                 <li>
                                     <a
                                         href="tel:+917829307322"
-                                        class="flex items-center gap-3 text-slate-700 dark:text-slate-300 hover:text-accent transition-colors duration-300"
-                                        ><span class="text-2xl">📞</span> +91
-                                        7829307322</a
+                                        class="contact-item flex items-center gap-3 text-slate-700 dark:text-slate-300 hover:text-accent transition-colors duration-300"
                                     >
+                                        <span class="contact-icon" aria-hidden="true">
+                                            <i data-lucide="phone"></i>
+                                        </span>
+                                        +91 7829307322
+                                    </a>
                                 </li>
                                 <li
-                                    class="flex items-center gap-3 text-slate-700 dark:text-slate-300"
+                                    class="contact-item flex items-center gap-3 text-slate-700 dark:text-slate-300"
                                 >
-                                    <span class="text-2xl">📍</span> India
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i data-lucide="map-pin"></i>
+                                    </span>
+                                    India
                                 </li>
                             </ul>
                         </div>
@@ -1237,5 +1486,8 @@
         </footer>
 
         <script src="js/main.js"></script>
+        <script>
+            if (window.lucide) lucide.createIcons();
+        </script>
     </body>
 </html>

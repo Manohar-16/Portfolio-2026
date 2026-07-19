@@ -161,6 +161,95 @@ header.scrolled {
   transform: translateY(-2px);
 }
 
+/* --- Project category filters --- */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  max-width: 42rem;
+  margin: -1.5rem auto 2.5rem;
+  padding: 0 0.25rem;
+}
+@media (max-width: 480px) {
+  .project-filters {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 0.25rem;
+  }
+}
+.project-filter-btn {
+  flex-shrink: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 9999px;
+  border: 2px solid #f59e0b;
+  background: transparent;
+  color: #f59e0b;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.project-filter-btn:hover {
+  background: rgba(245, 158, 11, 0.12);
+}
+.project-filter-btn.is-active {
+  background: #f59e0b;
+  color: #0f172a;
+  border-color: #f59e0b;
+}
+.project-filter-btn:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+.dark .project-filter-btn {
+  border-color: #f59e0b;
+  color: #fbbf24;
+}
+.dark .project-filter-btn:hover {
+  background: rgba(245, 158, 11, 0.18);
+}
+.dark .project-filter-btn.is-active {
+  background: #f59e0b;
+  color: #0f172a;
+  border-color: #f59e0b;
+}
+
+/* When filtering: flatten "more" wrapper so all matching cards share one grid */
+#projects.filter-active .projects-more-wrapper {
+  display: contents;
+}
+#projects.filter-active .project-card--more:not(.is-filtered-out):not(.is-filter-hiding) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#projects.filter-active .project-card:not(.is-filtered-out) {
+  animation: projectFilterIn 0.2s ease;
+}
+@keyframes projectFilterIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#projects-toggle-wrap.is-hidden {
+  display: none;
+}
+/* Hide non-matches immediately from layout so grid reflows without holes */
+.project-card.is-filter-hiding,
+.project-card.is-filtered-out {
+  display: none !important;
+}
+
 /* --- Section titles (for Intersection Observer animation) --- */
 .section-title {
   font-size: 2.25rem;
@@ -308,6 +397,30 @@ header.scrolled {
   cursor: default;
 }
 
+/* --- Contact icons (Lucide) --- */
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background: rgba(245, 158, 11, 0.12);
+  color: #f59e0b;
+}
+.contact-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  stroke-width: 2;
+}
+.contact-item:hover .contact-icon {
+  background: rgba(245, 158, 11, 0.22);
+}
+.dark .contact-icon {
+  background: rgba(245, 158, 11, 0.15);
+}
+
 /* --- Contact form inputs --- */
 .input-field {
   width: 100%;
@@ -382,7 +495,9 @@ header.scrolled {
   .btn,
   .project-card-inner,
   .nav-link::after,
-  .projects-more-wrapper {
+  .projects-more-wrapper,
+  .project-filter-btn,
+  .project-card.is-filter-hiding {
     transition: none;
   }
   .animate-bounce,

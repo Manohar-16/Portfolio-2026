@@ -66,108 +66,168 @@
       desc: 'Corporate website for Dubai-based event management company. Features service showcases, portfolio galleries, client testimonials, and contact forms with responsive design and optimized performance.',
       tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://recallmediafz.com/',
+      category: 'custom',
     },
     whitegold: {
       title: 'White Gold',
       desc: 'Multi-location website for gold buyers with branch finder, live gold rate calculator, KYC verification forms, and payment integration. Responsive design supporting 100+ branches across South India.',
       tech: 'Wordpress, HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://whitegold.money/',
+      category: 'custom',
     },
     'square-one-mena': {
       title: 'Square One',
       desc: 'Corporate website for digital transformation company operating in KSA, UAE, and Qatar. Features service pages, case studies, resource center, and multi-language support with modern UI and smooth interactions.',
       tech: 'WordPress, Elementor',
       url: 'https://www.squareonemea.com/',
+      category: 'cms',
+    },
+    'synthesis-systems': {
+      title: 'Synthesis Systems',
+      desc: 'Corporate website for a subscription monetization consultancy. Features services, solutions, partner ecosystem pages, success stories, FAQ, and contact flows with a responsive layout.',
+      tech: 'WordPress, Divi Builder',
+      url: 'https://synthesis-systems.com/',
+      category: 'cms',
+    },
+    'synthesis-erp': {
+      title: 'Synthesis ERP Solutions',
+      desc: 'Single-page website for a Synthesis sub-brand focused on Workday Financials and revenue management. Sections for challenges, expertise, services, and contact CTA with a responsive custom layout.',
+      tech: 'HTML, CSS, JavaScript',
+      url: 'https://synthesis-erpsolutions.com/',
+      category: 'custom',
     },
     kshemavana: {
       title: 'Kshemavana',
       desc: 'Wellness retreat website with booking system, virtual tour integration, treatment pages, and accommodation details. Custom WordPress integration with responsive design for naturopathy center.',
       tech: 'HTML, Bootstrap, JS, PHP, WordPress Custom',
       url: 'https://kshemavana.com/',
+      category: 'custom',
     },
     'bartack-brands': {
       title: 'Bartack Brands',
       desc: 'Brand launch studio website showcasing portfolio of celebrity fashion brands. Features service pages, market expertise sections, and contact forms with modern design and smooth animations.',
       tech: 'WordPress, Elementor',
       url: 'https://bartackbrands.com/',
+      category: 'cms',
     },
     'capstone-life': {
       title: 'Capstone Life',
       desc: 'Real estate developer website with project showcases, virtual tours, enquiry forms, and sustainability features. Custom WordPress templates with optimized performance and SEO structure.',
       tech: 'HTML, Bootstrap, JS, PHP, WordPress Custom',
       url: 'https://capstonelife.in/',
+      category: 'custom',
     },
     hosachiguru: {
       title: 'Hosachiguru',
       desc: 'Farmland marketplace website with project listings, property search filters, enquiry system, and blog. Responsive design showcasing managed farmland projects with interactive maps and galleries.',
       tech: 'WordPress, Elementor',
       url: 'https://www.hosachiguru.com/',
+      category: 'cms',
     },
     latentview: {
       title: 'LatentView Analytics',
       desc: 'Enterprise analytics company website with case studies, thought leadership content, event pages, and resource center. Scalable layouts with modern UI patterns and optimized assets.',
       tech: 'WordPress, Elementor',
       url: 'https://www.latentview.com/',
+      category: 'cms',
     },
     'citadel-network': {
       title: 'Citadel Network Solutions',
       desc: 'Commercial real estate services website with property listings, location-based search, service pages, and contact forms. Multi-city support with clear service presentation and responsive design.',
       tech: 'WordPress, Elementor',
       url: 'https://www.citadelnetinc.com/',
+      category: 'cms',
     },
     bankiq: {
       title: 'BankIQ',
       desc: 'Fintech platform website showcasing AI fraud prevention solutions. Features product pages, customer case studies, demo request forms, and technical documentation with clear messaging and fast load times.',
       tech: 'WordPress, WPBakery',
       url: 'https://bankiq.co/',
+      category: 'cms',
     },
     'samvedna-care': {
       title: 'Samvedna Care',
       desc: 'Healthcare website with self-assessment tools, service booking system, blog, and patient resources. Custom-coded responsive layouts with fast-loading pages and accessible design.',
       tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://www.samvednacare.com/',
+      category: 'custom',
     },
     aurasence: {
       title: 'Aurasence',
       desc: 'E-commerce website for fragrance brand with product catalog, shopping cart, and checkout flow. Product-focused design with smooth UX and mobile-optimized shopping experience.',
       tech: 'Shopify',
       url: 'https://aurasence.com/',
+      category: 'cms',
     },
     'mpower-lithium': {
       title: 'Mpower Lithium',
       desc: 'E-commerce website showcasing lithium battery products with detailed specifications, application guides, and purchase options. Product-driven design with clear information architecture.',
       tech: 'Shopify',
       url: 'https://mpowerlithium.com/',
+      category: 'cms',
     },
     'api-dynamics': {
       title: 'API Dynamics',
       desc: 'Technology platform website for API security solutions. Features product documentation, demo requests, blog, and resource center with clear service sections and responsive layout.',
       tech: 'Wix',
       url: 'https://www.apidynamics.com/',
+      category: 'cms',
     },
     'relevate-ai': {
       title: 'Relevate AI',
       desc: 'Marketing and sales platform website with product modules, feature showcases, demo scheduling, and resource library. AI-focused design highlighting products and use cases.',
       tech: 'Webflow',
       url: 'https://www.relevate.ai/',
+      category: 'cms',
     },
     aftr: {
       title: 'AFTR',
       desc: 'Modern website with Tailwind-based responsive design and performance optimization.',
       tech: 'HTML, Tailwind CSS, JavaScript, PHP',
       url: 'https://aftr.ae/',
+      category: 'custom',
     },
     chipedge: {
       title: 'ChipEdge',
       desc: 'Business website with cross-browser compatibility and SEO-focused structure.',
       tech: 'HTML, CSS, Bootstrap, JavaScript, PHP',
       url: 'https://chipedge.com/',
+      category: 'custom',
     },
-    additional: {
-      title: 'Additional Projects',
-      desc: 'Various WordPress and custom HTML websites developed with a focus on responsiveness, SEO optimization, performance, and maintainability.',
-      tech: 'WordPress, HTML, CSS, JavaScript, PHP',
-      url: '',
+    myridius: {
+      title: 'Myridius',
+      desc: 'HubSpot CMS website with industry and service pages, resource hub, careers, and contact flows. Built with HubDB for dynamic content, modular HubSpot templates, and responsive design.',
+      tech: 'HubSpot CMS, HubDB, HTML, CSS, JavaScript',
+      url: 'https://myridius.com/',
+      category: 'cms',
+    },
+    'razdan-consulting': {
+      title: 'Razdan Consulting',
+      desc: 'Corporate website for a financial advisory firm. Features service pages for investment banking, wealth management, capital raising, and real estate advisory, plus success stories and contact flows.',
+      tech: 'WordPress, Elementor',
+      url: 'https://razdanconsulting.com/',
+      category: 'cms',
+    },
+    adhub: {
+      title: 'AdHub',
+      desc: 'All-in-one ad management platform — connects Meta Ads, Google Ads, GA4, and LinkedIn Ads to generate unified performance reports and create campaigns directly from a single dashboard.',
+      tech: 'Next.js, React, Supabase, Node.js',
+      url: 'https://adhub.brandstory.ai/',
+      category: 'saas',
+    },
+    'abm-room': {
+      title: 'ABM room',
+      desc: 'AI-native prospecting and proposal platform for B2B sales — pulls prospect details for outreach, generates pitch proposals, and uses RAG over stored files/data to surface relevant context automatically.',
+      tech: 'Next.js, React, Node.js, Python, Redis',
+      url: 'https://abmroom.brandstory.ai/login',
+      category: 'saas',
+    },
+    meetroom: {
+      title: 'Meetroom',
+      desc: 'Self-hosted scheduling and booking platform with team scheduling, calendar sync, and embeddable booking widgets — built so your own database stays the source of truth instead of relying on a third-party scheduler.',
+      tech: 'Next.js, React, Supabase, Node.js',
+      url: 'https://meetroom.brandstory.ai/',
+      category: 'saas',
     },
   };
 
@@ -175,6 +235,7 @@
   const roles = [
     'Web Developer',
     'WordPress Developer',
+    'HubSpot CMS Developer',
     'Landing Page Developer',
     'Frontend Developer',
     'UI/UX Developer',
@@ -399,19 +460,38 @@
   });
 
   // --- Projects: View More / View Less ---
+  const projectsSection = document.getElementById('projects');
   const projectsMoreWrapper = document.getElementById('projects-more-wrapper');
   const projectsToggleBtn = document.getElementById('projects-toggle-btn');
+  const projectsToggleWrap = document.getElementById('projects-toggle-wrap');
+
+  function collapseProjectsMore() {
+    if (!projectsMoreWrapper || !projectsToggleBtn) return;
+    projectsMoreWrapper.classList.remove('revealed');
+    projectsMoreWrapper.setAttribute('aria-hidden', 'true');
+    projectsToggleBtn.textContent = 'View More Projects';
+    projectsToggleBtn.setAttribute('aria-expanded', 'false');
+    projectsMoreWrapper.querySelectorAll('.project-card--more').forEach(function (card) {
+      card.classList.remove('visible');
+    });
+  }
+
+  function revealProjectsMoreForFilter() {
+    if (!projectsMoreWrapper) return;
+    projectsMoreWrapper.classList.add('revealed');
+    projectsMoreWrapper.setAttribute('aria-hidden', 'false');
+    projectsMoreWrapper.querySelectorAll('.project-card--more').forEach(function (card) {
+      if (!card.classList.contains('is-filtered-out') && !card.classList.contains('is-filter-hiding')) {
+        card.classList.add('visible');
+      }
+    });
+  }
+
   if (projectsMoreWrapper && projectsToggleBtn) {
     projectsToggleBtn.addEventListener('click', function () {
       const isRevealed = projectsMoreWrapper.classList.contains('revealed');
       if (isRevealed) {
-        projectsMoreWrapper.classList.remove('revealed');
-        projectsMoreWrapper.setAttribute('aria-hidden', 'true');
-        projectsToggleBtn.textContent = 'View More Projects';
-        projectsToggleBtn.setAttribute('aria-expanded', 'false');
-        projectsMoreWrapper.querySelectorAll('.project-card--more').forEach(function (card) {
-          card.classList.remove('visible');
-        });
+        collapseProjectsMore();
       } else {
         projectsMoreWrapper.classList.add('revealed');
         projectsMoreWrapper.setAttribute('aria-hidden', 'false');
@@ -426,6 +506,61 @@
       }
     });
   }
+
+  // --- Projects: category filters ---
+  const filterButtons = document.querySelectorAll('.project-filter-btn');
+  const allProjectCards = document.querySelectorAll('.project-card[data-category]');
+  let activeFilter = 'all';
+
+  function setFilterButtons(filter) {
+    filterButtons.forEach(function (btn) {
+      var isActive = btn.getAttribute('data-filter') === filter;
+      btn.classList.toggle('is-active', isActive);
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+  }
+
+  function applyProjectFilter(filter) {
+    activeFilter = filter;
+    setFilterButtons(filter);
+
+    if (projectsSection) {
+      projectsSection.classList.toggle('filter-active', filter !== 'all');
+    }
+
+    if (filter === 'all') {
+      if (projectsToggleWrap) projectsToggleWrap.classList.remove('is-hidden');
+      collapseProjectsMore();
+      allProjectCards.forEach(function (card) {
+        card.classList.remove('is-filtered-out', 'is-filter-hiding');
+      });
+      return;
+    }
+
+    if (projectsToggleWrap) projectsToggleWrap.classList.add('is-hidden');
+
+    allProjectCards.forEach(function (card) {
+      var category = card.getAttribute('data-category');
+      var matches = category === filter;
+      if (matches) {
+        card.classList.remove('is-filtered-out', 'is-filter-hiding');
+        card.classList.add('visible');
+      } else {
+        card.classList.add('is-filtered-out');
+        card.classList.remove('is-filter-hiding');
+      }
+    });
+
+    revealProjectsMoreForFilter();
+  }
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = btn.getAttribute('data-filter') || 'all';
+      if (filter === activeFilter) return;
+      applyProjectFilter(filter);
+    });
+  });
 
   if (modalClose) modalClose.addEventListener('click', closeModal);
   if (modal) {
