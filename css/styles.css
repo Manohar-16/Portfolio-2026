@@ -163,29 +163,17 @@ header.scrolled {
 
 /* --- Project category filters --- */
 .project-filters {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  justify-items: stretch;
   gap: 0.5rem 0.75rem;
-  max-width: 52rem;
+  max-width: 36rem;
   margin: -1.5rem auto 2.5rem;
   padding: 0 0.5rem;
 }
-@media (min-width: 1100px) {
-  .project-filters {
-    grid-template-columns: repeat(6, max-content);
-  }
-}
 @media (max-width: 640px) {
   .project-filters {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 100%;
-  }
-  .project-filter-btn {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
   }
 }
 .project-filter-btn {

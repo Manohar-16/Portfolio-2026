@@ -208,41 +208,6 @@
       url: 'https://razdanconsulting.com/',
       category: 'cms',
     },
-    adhub: {
-      title: 'AdHub',
-      desc: 'All-in-one ad management platform — connects Meta Ads, Google Ads, GA4, and LinkedIn Ads to generate unified performance reports and create campaigns directly from a single dashboard.',
-      tech: 'Next.js, React, Supabase, Node.js',
-      url: 'https://adhub.brandstory.ai/',
-      category: 'saas',
-    },
-    'abm-room': {
-      title: 'ABM room',
-      desc: 'AI-native prospecting and proposal platform for B2B sales — pulls prospect details for outreach, generates pitch proposals, and uses RAG over stored files/data to surface relevant context automatically.',
-      tech: 'Next.js, React, Node.js, Python, Redis',
-      url: 'https://abmroom.brandstory.ai/login',
-      category: 'saas',
-    },
-    meetroom: {
-      title: 'Meetroom',
-      desc: 'Self-hosted scheduling and booking platform with team scheduling, calendar sync, and embeddable booking widgets — built so your own database stays the source of truth instead of relying on a third-party scheduler.',
-      tech: 'Next.js, React, Supabase, Node.js',
-      url: 'https://meetroom.brandstory.ai/',
-      category: 'saas',
-    },
-    'mobile-placeholder': {
-      title: 'Mobile Apps',
-      desc: 'Mobile app projects coming soon — native and cross-platform builds will be listed here.',
-      tech: 'React Native, Flutter, Expo',
-      url: '',
-      category: 'mobile',
-    },
-    'chrome-placeholder': {
-      title: 'Chrome Extensions',
-      desc: 'Chrome extension projects coming soon — productivity and workflow tools will be listed here.',
-      tech: 'JavaScript, Chrome Extensions API',
-      url: '',
-      category: 'chrome',
-    },
   };
 
   // --- Typing effect: human-like, consistent speed, cursor blinks only when paused ---
